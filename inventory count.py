@@ -1,5 +1,6 @@
 #importing multiline inputs without lagging out python and being intuitive
 #turned out to be much more annoying than expected
+#get a count of identical items from the inventorymarkdown backpack.tf gives (for the eyelander collection)
 
 with open('inventory markdown.txt','r') as file:content = file.read()
 itemlist = content.splitlines()
