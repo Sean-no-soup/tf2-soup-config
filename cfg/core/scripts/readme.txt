@@ -1,0 +1,1 @@
+ the things here are either extremely bulky or unused things the rest are in core/startup.cfg,
