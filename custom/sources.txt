@@ -1,0 +1,89 @@
+healsigns   				https://gamebanana.com/mods/12081
+vote sfx    				https://gamebanana.com/sounds/44489
+rocket launcher remove bg knock		https://gamebanana.com/sounds/24746
+ahud-cc					https://github.com/jakadak/ahud-cc?tab=readme-ov-file
+	(honorable mention https://gamebanana.com/mods/490298)
+mastercomfig preset and addons only 	https://comfig.app/app/
+	launch options 			https://docs.comfig.app/latest/customization/launch_options/#recommended-launch-options
+killfeed icons 				https://gamebanana.com/mods/406361
+
+https://www.teamfortress.tv/35367/vtf-crosshair-pack
+https://www.teamfortress.tv/37767/how-to-make-vtf-crosshairs
+https://cfg.tf/tools/crosshairs/
+
+tf2 config
+
+mastercomfig 9.10.2
+
+modules
+	mod_support=on
+	dynamic_background=preload
+	motion_blur=off
+	download=all
+	sprays=on
+	hud_player_model=off
+	sound=high
+	logo=off
+	sheens_speed=slow
+	sheens_tint=full
+	outlines=high 
+	lod=high      
+	romevision=on
+	ragdolls=medium
+	voice_chat=on
+
+pre_comfig
+	medium-high
+
+launch options
+	-novid -nojoy -nosteamcontroller -nohltv  -noquicktime -particles 1 -precachefontchars -enablefakeip -dxlevel95 
+
+r3dnasa's fork of ahud
+	https://github.com/r3dnasa/ahud/tree/master
+
+preload map
+	https://github.com/Yttrium-tYcLief/CompVMInstaller/blob/master/Project/CompVMInstaller/Resources/preload_room.bsp?raw=true0
+
+tr_walkway
+	https://gamebanana.com/mods/74812
+
+jump maps
+	https://jumpacademy.tf/
+
+crosshairs
+	https://cfg.tf/tools/crosshairs/
+
+vote font for invis characters
+	https://github.com/andy013/votehud_custom_font
+
+surepy's fork of pazer's bot detector
+	https://github.com/surepy/tf2_bot_detector
+
+
+wait does this work (might be broken by custom hud but still) https://gamebanana.com/scripts/12163
+// Streamer Mode Script // 
+alias strangerpfp "nostrangerpfp"
+alias nostrangerpfp "tf_hud_target_id_show_avatars 2; alias strangerpfp withstrangerpfp"
+alias withstrangerpfp "tf_hud_target_id_show_avatars 1; alias strangerpfp nostrangerpfp"
+alias nospraystream "spraystreamoff"
+alias spraystreamon "cl_spraydisable 0;alias nospraystream spraystreamoff"
+alias spraystreamoff "cl_spraydisable 1;alias nospraystream spraystreamon"
+alias silencestream "silencestream1"
+alias silencestream1 "voice_modenable 0;hud_saytext_time 0;alias silencestream silencestream2"
+alias silencestream2 "voice_modenable 1;hud_saytext_time 12;alias silencestream silencestream1"
+alias violence "violenceOff"
+alias violenceOn "violence_ablood 1; violence_agibs 1; violence_hblood 1; violence_hgibs 1; cl_burninggibs 1; tf_playergib 1; alias violence violenceOff"
+alias violenceOff "violence_ablood 0; violence_agibs 0; violence_hblood 0; violence_hgibs 0; cl_burninggibs 0; tf_playergib 0; alias violence violenceOn"
+
+alias streamermode streamermodeon
+alias streamermodeon "silencestream;nospraystream;strangerpfp;violence;echo [SCRIPTS] Streamer Mode ON!;alias streamermode streamermodeoff"
+alias streamermodeoff "silencestream;nospraystream;strangerpfp;violence;echo [SCRIPTS] Streamer Mode OFF!;alias streamermode streamermodeon"
+
+
+
+bind "[" "hud_deathnotice_time 0"
+bind "]" "hud_deathnotice_time 1"
+
+
+bind "o" streamermode
+
