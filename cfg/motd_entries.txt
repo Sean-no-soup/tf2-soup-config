@@ -1,0 +1,16 @@
+"motd_entries"
+{
+	"last_request_time"		"2024-11-30 19:58:10"
+	"last_request_language"		"english"
+	"116"
+	{
+		"post_time"		"2024-10-11 02:55:00"
+		"title_english"		"Scream Fortress XVI"
+		"text_english"		"Complete a new round of Merasmissions! Make offerings to your Soul Gargoyle! Play seven new community created Halloween maps! Check out new community cosmetic items, Unusual effects, taunts, and War Paints! Scream Fortress XVI runs through November 7, 2024."
+		"url"		"http://www.teamfortress.com/post.php?id=230553"
+		"image"		"illustrations/gamemode_halloween2015"
+		"header_type"		"2"
+		"header_english"		"Happy Halloween"
+		"header_icon"		"class_icons/filter_all_motd"
+	}
+}

@@ -1,0 +1,1 @@
+11/30/2024 - 19:51:48: #base ../../resource/scheme/fonts_def.res 
